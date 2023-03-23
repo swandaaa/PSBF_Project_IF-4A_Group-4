@@ -71,3 +71,89 @@ in APPPATH\Controllers\TarifController.php on line 17.
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 16:14:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'gostudy' in D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('p:localhost', 'root', '', 'gostudy', 3306, '', 0)
+#1 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#2 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci\PSBF_Project_IF-4A_Group-4\app\Models\TarifModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\ci\PSBF_Project_IF-4A_Group-4\app\Controllers\TarifController.php(13): App\Models\TarifModel->getData()
+#5 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\TarifController->index()
+#6 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+#7 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\ci\PSBF_Project_IF-4A_Group-4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci\\PSBF_Proj...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'gostudy' in D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#1 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci\PSBF_Project_IF-4A_Group-4\app\Models\TarifModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\ci\PSBF_Project_IF-4A_Group-4\app\Controllers\TarifController.php(13): App\Models\TarifModel->getData()
+#4 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\TarifController->index()
+#5 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+#6 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\ci\PSBF_Project_IF-4A_Group-4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci\\PSBF_Proj...')
+#9 {main}
+CRITICAL - 2023-03-23 16:14:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'gostudy'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\TarifModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tarif')
+ 3 APPPATH\Controllers\TarifController.php(13): App\Models\TarifModel->getData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TarifController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-23 16:14:43 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'gostudy' in D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('p:localhost', 'root', '', 'gostudy', 3306, '', 0)
+#1 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#2 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci\PSBF_Project_IF-4A_Group-4\app\Models\TarifModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 D:\ci\PSBF_Project_IF-4A_Group-4\app\Controllers\TarifController.php(13): App\Models\TarifModel->getData()
+#5 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\TarifController->index()
+#6 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+#7 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\ci\PSBF_Project_IF-4A_Group-4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci\\PSBF_Proj...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'gostudy' in D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#1 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci\PSBF_Project_IF-4A_Group-4\app\Models\TarifModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#3 D:\ci\PSBF_Project_IF-4A_Group-4\app\Controllers\TarifController.php(13): App\Models\TarifModel->getData()
+#4 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\TarifController->index()
+#5 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+#6 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\ci\PSBF_Project_IF-4A_Group-4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\ci\PSBF_Project_IF-4A_Group-4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci\\PSBF_Proj...')
+#9 {main}
+CRITICAL - 2023-03-23 16:14:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'gostudy'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\TarifModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tarif')
+ 3 APPPATH\Controllers\TarifController.php(13): App\Models\TarifModel->getData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TarifController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TarifController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-23 21:42:45 --> Undefined array key "ID_Bank"
+in APPPATH\Views\bank.php on line 24.
+ 1 APPPATH\Views\bank.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID_Bank"', 'APPPATH\\Views\\bank.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\bank.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('bank', [], true)
+ 5 APPPATH\Controllers\BankController.php(14): view('bank', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\BankController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BankController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
