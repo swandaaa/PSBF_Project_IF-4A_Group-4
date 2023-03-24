@@ -32,6 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/tarif', 'TarifController::index');
 $routes->get('/bank', 'BankController::index');
+$routes->get('/pembayaran', 'PembayaranController::index');
 
 /*
  * --------------------------------------------------------------------
