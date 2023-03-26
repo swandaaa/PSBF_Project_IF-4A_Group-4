@@ -33,6 +33,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/tarif', 'TarifController::index');
 $routes->get('/bank', 'BankController::index');
 $routes->get('/ruangan', 'RuanganController::index');
+$routes->post('/ruangan', 'RuanganController::insert');
 $routes->get('/KategoriRuanganController', 'KategoriRuanganController::index');
 
 
