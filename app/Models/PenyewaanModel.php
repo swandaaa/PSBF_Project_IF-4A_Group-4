@@ -6,11 +6,16 @@ use CodeIgniter\Model;
 
 class PenyewaanModel extends Model
 {
-    public function getData()
+    protected $table = 'penyewaan';
+
+    protected $allowFields = ['id_sewa', 'id_user', 'id_ruangan', 'tgl_sewa', 'durasi_sewa', 'ket'];
+    public function getdata()
     {
-        $db = db_connect();
-        $sql = 'SELECT * FROM penyewaan';
-        $query = $db->query($sql);
-        return $query;
+        $query = $this->db->query("SELECT * FROM penyewaan");
+        return $query->getResult();
+    }
+    public function insertData($data)
+    {
+        $this->db->table('penyewaan')->insert($data);
     }
 }
