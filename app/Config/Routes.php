@@ -38,6 +38,9 @@ $routes->get('/KategoriRuanganController', 'KategoriRuanganController::index');
 $routes->get('/user', 'UserController::index');
 $routes->get('/penyewaan', 'PenyewaanController::index');
 $routes->post('/penyewaan', 'PenyewaanController::insert');
+$routes->get('/signup', 'signupController::index');
+$routes->post('/signup', 'signupController::insert');
+
 
 
 /*
