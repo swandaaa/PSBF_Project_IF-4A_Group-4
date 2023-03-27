@@ -16,7 +16,7 @@
         <div id='form'>
             <br>
             <?php
-            echo form_open('/signup');
+            echo form_open('/user');
 
             //Field ID_User
             $att_label = [
@@ -71,7 +71,7 @@
 
             echo form_input($data_role);
 
-        
+
 
             echo '<br>';
             echo form_submit('submit', 'Submit', "class='btn btn-primary'");
