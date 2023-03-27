@@ -25,7 +25,7 @@
                         '<td>' . $record['ID_USER'] . '</td>' .
                         '<td>' . $record['USERNAME'] . '</td>' .
                         '<td>' . $record['PASSWORD'] . '</td>' .
-                        '<td>' . $record['ROLE'] . '</td>' .
+                        '<td>' . $record['ID_LEVEL'] . '</td>' .
                         '</tr>';
                 }
                 ?>
