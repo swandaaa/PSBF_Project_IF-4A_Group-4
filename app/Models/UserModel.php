@@ -13,4 +13,8 @@ class UserModel extends Model
         $query = $db->query($sql);
         return $query;
     }
+    public function insertData($data)
+    {
+        $this->db->table('user')->insert($data);
+    }
 }
