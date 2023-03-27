@@ -35,6 +35,9 @@ $routes->get('/bank', 'BankController::index');
 $routes->get('/ruangan', 'RuanganController::index');
 $routes->post('/ruangan', 'RuanganController::insert');
 $routes->get('/KategoriRuanganController', 'KategoriRuanganController::index');
+$routes->get('/user', 'UserController::index');
+$routes->get('/penyewaan', 'PenyewaanController::index');
+$routes->post('/penyewaan', 'PenyewaanController::insert');
 
 
 /*

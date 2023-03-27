@@ -16,7 +16,7 @@
                 <th>ID User</th>
                 <th>Username</th>
                 <th>Password</th>
-                <th>Role</th>
+                <th>ID Level</th>
             </thead>
             <tbody>
                 <?php
