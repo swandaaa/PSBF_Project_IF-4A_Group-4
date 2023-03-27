@@ -16,7 +16,7 @@
         <div id='form'>
             <br>
             <?php
-            echo form_open('/user');
+            echo form_open('/signup');
 
             //Field ID_User
             $att_label = [
